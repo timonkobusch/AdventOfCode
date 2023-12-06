@@ -1,0 +1,12 @@
+# Part 1 Sample
+Time:      7  15   30
+Distance:  9  40  200
+# Part 1 Actual
+Time:        46     85     75     82
+Distance:   208   1412   1257   1410
+# Part 2 Sample
+Time:      71530
+Distance:  940200
+# Part 2 Actual
+Time:        46857582
+Distance:   208141212571410
