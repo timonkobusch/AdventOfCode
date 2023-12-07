@@ -1,4 +1,6 @@
 # Part 1 Sample
+1
 # Part 1 Actual
 # Part 2 Sample
+0
 # Part 2 Actual

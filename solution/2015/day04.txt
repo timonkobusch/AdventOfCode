@@ -1,4 +1,7 @@
 # Part 1 Sample
+609043
 # Part 1 Actual
+346386
 # Part 2 Sample
 # Part 2 Actual
+9958218

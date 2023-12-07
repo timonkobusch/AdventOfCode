@@ -1,4 +1,8 @@
 # Part 1 Sample
+3
 # Part 1 Actual
+74
 # Part 2 Sample
+5
 # Part 2 Actual
+1795

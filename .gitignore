@@ -27,6 +27,7 @@ pip-delete-this-directory.txt
 htmlcov/
 .tox/
 .nox/
+.idea/
 .coverage
 .coverage.*
 .cache
@@ -75,3 +76,4 @@ dmypy.json
 .pyre/
 .pytype/
 cython_debug/
+!/src/2023/day07.py
