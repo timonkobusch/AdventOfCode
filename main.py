@@ -30,7 +30,6 @@ def read_to_list(filename, remove=False):
 def test_solution(day, only_sample=False, year=None):
     if day < 10:
         day = f'0{day}'
-    print(year)
     if not year:
         year = datetime.date.today().year
     print(f"Day {day} Year {year}")

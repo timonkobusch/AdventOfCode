@@ -1,4 +1,7 @@
 # Part 1 Sample
+6440
 # Part 1 Actual
+251106089
 # Part 2 Sample
+5905
 # Part 2 Actual
