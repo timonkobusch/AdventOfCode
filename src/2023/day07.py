@@ -65,7 +65,7 @@ def p2(lines):
         return 0
 
     def compare(a, b):
-        symbols = '23456789TJQKA'
+        symbols = 'J23456789TQKA'
         type_a = get_rank(a[0])
         type_b = get_rank(b[0])
         if type_a > type_b:
