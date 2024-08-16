@@ -97,9 +97,9 @@ def test_solution(day, only_sample=False, year=None):
 if __name__ == "__main__":
     print("Advent of Code Test")
     parser = argparse.ArgumentParser(description="Test Advent of Code solutions.")
+    parser.add_argument("year", type=int, help="Year of the problem")
     parser.add_argument("day", type=int, help="Day of the challenge to test")
     parser.add_argument("--sample", type=bool, nargs="?", help="Test only samples.")
-    parser.add_argument("--year", type=int, nargs="?", help="Year of the problem")
 
     args = parser.parse_args()
 
