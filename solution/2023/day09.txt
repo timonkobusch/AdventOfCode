@@ -1,8 +1,0 @@
-# Part 1 Sample
-114
-# Part 1 Actual
-1798691765
-# Part 2 Sample
-2
-# Part 2 Actual
-1104
