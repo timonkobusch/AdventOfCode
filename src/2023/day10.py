@@ -1,22 +1,20 @@
-
-
 def p1(lines):
     def getChildNodes(node):
         y, x = node
         symbol = grid[y][x]
         children = []
-        if x-1 > 0 and str(grid[y][x-1]) in "-LF":
-            if symbol == 'S' or symbol == '-' or symbol == 'J' or symbol == '7':
-                children.append((y, x-1))
-        if x+1 < len(grid[0]) and str(grid[y][x+1]) in "-7J":
-            if symbol == 'S' or symbol == '-' or symbol == 'L' or symbol == 'F':
-                children.append((y, x+1))
-        if y-1 > 0 and str(grid[y-1][x]) in "|F7":
-            if symbol == 'S' or symbol == '|' or symbol == 'L' or symbol == 'J':
-                children.append((y-1, x))
-        if y+1 < len(grid) and str(grid[y+1][x]) in "|JL":
-            if symbol == 'S' or symbol == '|' or symbol == 'F' or symbol == '7':
-                children.append((y+1, x))
+        if x - 1 > 0 and str(grid[y][x - 1]) in "-LF":
+            if symbol == "S" or symbol == "-" or symbol == "J" or symbol == "7":
+                children.append((y, x - 1))
+        if x + 1 < len(grid[0]) and str(grid[y][x + 1]) in "-7J":
+            if symbol == "S" or symbol == "-" or symbol == "L" or symbol == "F":
+                children.append((y, x + 1))
+        if y - 1 > 0 and str(grid[y - 1][x]) in "|F7":
+            if symbol == "S" or symbol == "|" or symbol == "L" or symbol == "J":
+                children.append((y - 1, x))
+        if y + 1 < len(grid) and str(grid[y + 1][x]) in "|JL":
+            if symbol == "S" or symbol == "|" or symbol == "F" or symbol == "7":
+                children.append((y + 1, x))
 
         return children
 
@@ -25,7 +23,7 @@ def p1(lines):
     start = None
     for y in range(len(grid)):
         for x in range(len(grid[0])):
-            if grid[y][x] == 'S':
+            if grid[y][x] == "S":
                 start = (y, x)
                 break
 
@@ -46,18 +44,18 @@ def p2(lines):
         y, x = node
         symbol = grid[y][x]
         children = []
-        if x-1 > 0 and str(grid[y][x-1]) in "-LF":
-            if symbol == 'S' or symbol == '-' or symbol == 'J' or symbol == '7':
-                children.append((y, x-1))
-        if x+1 < len(grid[0]) and str(grid[y][x+1]) in "-7J":
-            if symbol == 'S' or symbol == '-' or symbol == 'L' or symbol == 'F':
-                children.append((y, x+1))
-        if y-1 > 0 and str(grid[y-1][x]) in "|F7":
-            if symbol == 'S' or symbol == '|' or symbol == 'L' or symbol == 'J':
-                children.append((y-1, x))
-        if y+1 < len(grid) and str(grid[y+1][x]) in "|JL":
-            if symbol == 'S' or symbol == '|' or symbol == 'F' or symbol == '7':
-                children.append((y+1, x))
+        if x - 1 > 0 and str(grid[y][x - 1]) in "-LF":
+            if symbol == "S" or symbol == "-" or symbol == "J" or symbol == "7":
+                children.append((y, x - 1))
+        if x + 1 < len(grid[0]) and str(grid[y][x + 1]) in "-7J":
+            if symbol == "S" or symbol == "-" or symbol == "L" or symbol == "F":
+                children.append((y, x + 1))
+        if y - 1 > 0 and str(grid[y - 1][x]) in "|F7":
+            if symbol == "S" or symbol == "|" or symbol == "L" or symbol == "J":
+                children.append((y - 1, x))
+        if y + 1 < len(grid) and str(grid[y + 1][x]) in "|JL":
+            if symbol == "S" or symbol == "|" or symbol == "F" or symbol == "7":
+                children.append((y + 1, x))
 
         return children
 
@@ -65,7 +63,7 @@ def p2(lines):
     start = None
     for y in range(len(grid)):
         for x in range(len(grid[0])):
-            if grid[y][x] == 'S':
+            if grid[y][x] == "S":
                 start = (y, x)
                 break
 
@@ -80,10 +78,11 @@ def p2(lines):
             if child not in visited:
                 stack.append(child)
     print(start)
+
     def count_inversions(y, x):
         count = 0
         for i in range(x):
-            if not (y, i) in visited:
+            if (y, i) not in visited:
                 continue
             count += grid[y][i] in {"J", "L", "|"}
         return count
