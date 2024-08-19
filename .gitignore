@@ -1,4 +1,5 @@
 expected_output/
+puzzle_input/
 __pycache__/
 *.py[cod]
 *$py.class
